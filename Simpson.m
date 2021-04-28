@@ -7,8 +7,6 @@ function [I] = Simpson(x, y)
 %   I = the numerical integral calculated
 
 I = 0;
-odds = 0;
-evens = 0;
 
 %check for same length:
 if length(x) ~= length(y)
@@ -40,7 +38,7 @@ else
     h = dx(1);
     y1 = y(2:2:i-1);
     y2 = y(3:2:i-2);
-    I = (y(1) + 4*sum(y1) + 2*sum(y2) + y(i)) * (h/3)    %4/7/21 Tested, spacing is not the issue
+    I = (y(1) + 4*sum(y1) + 2*sum(y2) + y(i)) * (h/3)    %4/7/21 Fixed Issue With Spacing
     if e==o
         I = I + (x(i) - x(i-1)) * ((y(i)+y(i-1))/2);
         warning("Trapezoidal rule will be used due to an odd amount of points.")
