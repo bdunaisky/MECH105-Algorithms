@@ -10,7 +10,10 @@ The code to call the function is:
 I = Simpson(x,y)
 `
 
-Where I is the value outputed as the integral, x is a vector of equally spaced independent variable, and y is the vector of fuction values with respect to x. Both vectors must be the same length.
+Where:
+- I is the value outputed as the integral
+- x is a vector of equally spaced independent variable
+- y is the vector of fuction values with respect to x. Both vectors must be the same length
 
 ### Example Use
 ```
