@@ -1,7 +1,3 @@
-%I have done what grader told me to, P*A == L*U evaluates to the logical matrix [1 1 1; 1 1 1; 1 1 0] This means the value in a_3,3 is wrong, but further inspection shows that this is only the case due to rounding error. I went to Alex's office hours and asked about this and he told me
-%numerous students had the same issue. I never figured out how to fix this.
-
-
 function [L, U, P] = luFactor(A)
 % luFactor(A)
 %	LU decomposition with pivotiing
